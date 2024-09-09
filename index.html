@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keydown Event Demo</title>
+</head>
+<body>
+    <h1>Type the Enter Key</h1> <!-- display-->
+    <script>
+        //Add an eventlistener to the document, which is a function that waits for an event
+        //then it executes a soecific action
+        //Events are things like clicks, key presses, mouse movements, etc.
+        //Can also be things like page finishes loading, 
+        document.addEventListener('keydown', function(e){
+            //specifies event that allows us to register an event handler
+            //e is the key
+            //an event handler on a target element is the document object
+        //if the key pressed is the enter key, then the alert will pop up
+        if(e.keyCode === 13){
+            alert('You pressed the Enter key');
+        }
+    });
+//publish code to GITHUB
+
+    </script>
+    
+</body>
+</html>
